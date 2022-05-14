@@ -21,7 +21,8 @@ Regex Components are commonly found in various programming languages, however, t
 
 Anchor components specifies a location within a particular string to search, they match postiions before, after or between characters. For example: * ^A = match at the beginning of a line.  * A$ = match at the end of a line.
 
-Quantifiers allow for the specification of how many instances of a character, character-class or group must be present in the input for a match to be found.
+Quantifiers ( * + ? {} ) allow for the specification of how many instances of a character, character-class or group must be present in the input for a match to be found. 
+For an example: abc{2,5} matches a string that has ab followed by the numbers 2 up to 5 c
 
 OR Operator (|) is used to match characters or expression of either the left or right of the operator. For an example (G|g) will match either G or g from the input string.
 
@@ -49,5 +50,7 @@ Back-references are captured-matched-input-strings saved in memory for later rec
 
 Look-ahead and Look-behind are also known as lookarounds that are considered as assertions in which don't deploy match-characters, they only indicate if there was a match or no-match.  
 
+REGEX-DEMONSTRATION WITH THE EMAIL-MATCHING: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
 Author
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Andres Abreu: https://github.com/andres-abreu

@@ -66,11 +66,34 @@ Are captured-matched-input-strings saved in memory for later recall. The back-re
 ### Look-ahead and Look-behind 
 Are also known as lookarounds that are considered as assertions in which don't deploy match-characters, they only indicate if there was a match or not. 
 
-### REGEX-EXPLANATION WITH THE EMAIL-MATCHING: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-~1: /^([a-z0-9_\.-]+) = This is the first capture group within the parenthesis.
-~2: @ 
-~3: ([\da-z\.-]+) = This is the second capture group
-~4: ([a-z\.]{2,6})$/ = This is the third capture group in which asserts the position at the end of the string.
+### REGEX-BREAK-DOWN-EXPLANATION
+**REGEX-EMAIL-EXAMPLE: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/**
+**~1:** /^([a-z0-9_\.-]+)
+* / begins with regex boundary
+* ^ anchor asserts the position at the start of the string
+* () parenthesis creates a group
+* [] matches anything within the brackets
+* a-z0-9 matches any lower-case-alphabet-letter from a to z & any numeric number from 0 to 9
+* _\.- matches these characters
+* + a quantifier that matches as many times as possible
+
+**~2:** @ = matches the @ symbol
+
+**~3:** ([\da-z\.-]+)
+* () parenthesis creates a group
+* [] matches anything within the brackets
+* /d matches any mumeric digit
+* a-z matches any lower-case-alphabet-letter from a to z
+* \.- matches these characters
+* + a quantifier that matches as many times as possible
+
+**~4:** ([a-z\.]{2,6})$/
+* () parenthesis creates a group
+* [] matches anything within the brackets
+* a-z matches any lower-case-alphabet-letter from a to z
+* \. matches these characters
+* {2,6} these greedy quantifiers matches the previous token 2 to 6 times as many times as possible
+* $ this asserts the postion at the end of the string
 
 ### Author
 Andres Abreu: https://github.com/andres-abreu

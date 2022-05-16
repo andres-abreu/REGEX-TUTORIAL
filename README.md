@@ -10,3 +10,6 @@ This is a short tutorial of regular expression or regex which is a string of tex
 
 ## INSTALL/RUN-DIRECTIONS: THIS IS A GIST.
 Please visit [here](https://gist.github.com/andres-abreu/9b9d23553a6c4f856b859140d80633b6)
+
+## VIDEO-TUROTIAL
+[CLICK-HERE] (https://drive.google.com/file/d/1WtxwAuxtOMkkwb5ZfL0gdPkdR_AxBIzK/view?usp=sharing)
